@@ -24,7 +24,7 @@ export function App() {
           <div></div>
         </div>
       </div>
-      <div className="flex h-full max-w-[1150px] w-full px-10 items-center z-10">
+      <div className="flex flex-1 max-w-[1150px] w-full px-10 items-center z-10">
 
         <div className='text-5xl leading-[1.2em] font-bold md:max-w-[400px]'>
           Em breve o novo portal <br />
