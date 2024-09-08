@@ -8,8 +8,8 @@ import Img2 from './assets/img-2.jpg'
 export function App() {
 
   return (
-    <div className="h-screen flex flex-col items-center bg-[#1e1e1e] text-white">
-      <div>
+    <div className="h-screen flex flex-col items-center bg-[#1e1e1e] text-white overflow-hidden">
+      <div className='relative w-full'>
         <img src={Blur1} alt="" className='absolute left-0 top-[10%] right-auto bottom-auto max-w-full' />
         <img src={Blur2} alt="" className='absolute left-auto top-0 right-0 bottom-auto' />
       </div>
