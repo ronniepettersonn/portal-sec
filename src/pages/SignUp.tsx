@@ -2,7 +2,6 @@
 import { Link } from 'react-router-dom'
 import Noise from '../assets/bg-noise.png'
 import Google from '../assets/google.svg'
-import Apple from '../assets/apple.svg'
 
 export function SignUp() {
     document.title = 'Portal IEC | Registrar'
