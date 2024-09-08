@@ -1,4 +1,5 @@
 //import LogoWhite from '../assets/logo-white.png'
+import { Link } from 'react-router-dom'
 import Noise from '../assets/bg-noise.png'
 
 export function Login() {
@@ -44,7 +45,7 @@ export function Login() {
                                 </div>
                                 <button type="submit" className="w-full text-[#1e1e1e] bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  bg-gradient-to-r from-[rgb(255,133,126)] to-[rgb(199,156,255)] dark:focus:ring-primary-800 hover:transform hover:scale-[0.98] hover:transition-all">Entrar</button>
                                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                                    Ainda não tem uma conta? <a href="#" className="font-medium text-[#c79cff] hover:underline dark:text-primary-500">Criar conta</a>
+                                    Ainda não tem uma conta? <Link to="/signup" className="font-medium text-[#c79cff] hover:underline dark:text-primary-500">Criar conta</Link>
                                 </p>
                             </form>
                         </div>
