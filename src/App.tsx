@@ -31,7 +31,7 @@ export function App() {
           da <span className='bg-clip-text text-transparent bg-gradient-to-r from-[#fffb9c] to-[#ffb69f]' /* style={{ background: `linear-gradient(90deg, #fffb9c, #ffb69f` }} */>IEC</span>  para sua <span className='bg-clip-text text-transparent bg-gradient-to-r from-[#c79cff] to-[#9fbfff]' >edificação</span>
         </div>
 
-        <div className='relative w-[40%] h-[50vh] max-md:hidden'>
+        <div className='relative w-[40%] h-[50vh] max-h-[450px] max-md:hidden'>
 
 
           <img src={Img1} alt="" className='rounded-[10px] w-[65%] min-w-[250px] absolute left-auto top-0 right-[20%] bottom-0' />
