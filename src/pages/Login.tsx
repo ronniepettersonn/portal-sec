@@ -3,6 +3,8 @@ import Noise from '../assets/bg-noise.png'
 
 export function Login() {
     document.title = 'Portal IEC | Login'
+
+
     return (
         <div className="h-screen flex flex-col items-center bg-[#1e1e1e] text-white overflow-hidden">
             <section className="w-full">
@@ -26,8 +28,13 @@ export function Login() {
                                 </div>
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-start">
-                                        <div className="flex items-center h-5">
-                                            <input id="remember" aria-describedby="remember" type="checkbox" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" />
+                                        <div className="flex items-center h-5 relative">
+                                            <input type="checkbox" className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#c79cff] checked:border-[#c79cff]" id="remember" />
+                                            <span className="absolute text-[#1e1e1e] opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                                </svg>
+                                            </span>
                                         </div>
                                         <div className="ml-3 text-sm">
                                             <label htmlFor="remember" className="text-gray-500 dark:text-gray-300">Lembrar-me</label>
