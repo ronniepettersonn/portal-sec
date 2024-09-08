@@ -43,7 +43,7 @@ export function App() {
       </div>
 
 
-      <div className="z-10 p-10 flex justify-center w-full rounded-t-[20px] border-t border-t-[hsla(0,0%,62%,0.62)]" style={{ background: `url(${Noise}), linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)` }}>
+      <div className="max-sm:p-6 z-10 p-10 flex justify-center w-full rounded-t-[20px] border-t border-t-[hsla(0,0%,62%,0.62)]" style={{ background: `url(${Noise}), linear-gradient(180deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)` }}>
         <div className="flex justify-between items-center max-w-[1150px] w-full max-sm:hidden">
           <div className=''>
             Todos os direitos reservados.
@@ -54,7 +54,7 @@ export function App() {
 
         </div>
 
-        <div className="flex flex-col gap-4 justify-between items-center max-w-[1150px] w-full sm:hidden">
+        <div className="flex flex-col gap-2 justify-between items-center max-w-[1150px] w-full sm:hidden">
           <div className=' gap-4 flex '>
             <a href='https://www.instagram.com/igrejaiec/' target='_blank' className='hover:underline'>Instagram</a> <span>/</span>  <a href='https://www.youtube.com/@iecigarape' target='_blank' className='hover:underline'>Youtube</a>   <span>/</span>   <a href='https://podcasters.spotify.com/pod/show/iec' target='_blank' className='hover:underline'>Podcast</a>
           </div>
