@@ -24,9 +24,9 @@ export function App() {
           <div></div>
         </div>
       </div>
-      <div className="flex flex-1 max-w-[1150px] w-full px-10 items-center z-10">
+      <div className="flex flex-1 justify-around max-w-[1150px] w-full px-10 items-center z-10">
 
-        <div className='text-5xl leading-[1.2em] font-bold md:max-w-[400px]'>
+        <div className='text-5xl leading-[1.2em] font-bold md:max-w-[500px]'>
           Em breve o novo portal <br />
           da <span className='bg-clip-text text-transparent bg-gradient-to-r from-[#fffb9c] to-[#ffb69f]' /* style={{ background: `linear-gradient(90deg, #fffb9c, #ffb69f` }} */>IEC</span>  para sua <span className='bg-clip-text text-transparent bg-gradient-to-r from-[#c79cff] to-[#9fbfff]' >edificação</span>
         </div>
