@@ -1,9 +1,11 @@
 //import LogoWhite from '../assets/logo-white.png'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Noise from '../assets/bg-noise.png'
 
 export function Login() {
     document.title = 'Portal IEC | Login'
+
+    const navigate = useNavigate()
 
 
     return (
@@ -32,8 +34,8 @@ export function Login() {
                                         <div className="flex items-center h-5 relative">
                                             <input type="checkbox" className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-[#c79cff] checked:border-[#c79cff]" id="remember" />
                                             <span className="absolute text-[#1e1e1e] opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" stroke-width="1">
-                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" strokeWidth="1">
+                                                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                                                 </svg>
                                             </span>
                                         </div>
@@ -43,7 +45,7 @@ export function Login() {
                                     </div>
                                     <a href="#" className="text-sm font-medium text-[#c79cff] hover:underline dark:text-primary-500">Esqueceu a senha?</a>
                                 </div>
-                                <button type="submit" className="w-full text-[#1e1e1e] bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  bg-gradient-to-r from-[rgb(255,133,126)] to-[rgb(199,156,255)] dark:focus:ring-primary-800 hover:transform hover:scale-[0.98] hover:transition-all">Entrar</button>
+                                <button type="button" onClick={() => (navigate('/dashboard'), console.log('cliquei'))} className="w-full text-[#1e1e1e] bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  bg-gradient-to-r from-[rgb(255,133,126)] to-[rgb(199,156,255)] dark:focus:ring-primary-800 hover:transform hover:scale-[0.98] hover:transition-all">Entrar</button>
                                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                                     Ainda não tem uma conta? <Link to="/signup" className="font-medium text-[#c79cff] hover:underline dark:text-primary-500">Criar conta</Link>
                                 </p>
