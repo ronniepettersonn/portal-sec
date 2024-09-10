@@ -1,5 +1,5 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import LogoWhite from '../assets/logo-white3.png'
+import LogoWhite from '../assets/logo-white.png'
 
 export function Header() {
     const navigate = useNavigate()
